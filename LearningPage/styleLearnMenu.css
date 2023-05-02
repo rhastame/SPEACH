@@ -1,0 +1,358 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family : 'Poppins', sans-serif;
+}
+
+.navbar{
+    height : 40px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding : 30px 50px 30px 30px;
+}
+
+.navbar .logo img{
+    height : 120px;
+    transition: all 1s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+.navbar .logo1{
+    cursor : pointer;
+}
+
+.nav{
+    width : 800px;
+    align-self: right;
+    display: flex;
+    justify-content: flex-end;
+    gap : 15%;
+    align-items: center;
+    font-size : 16px;
+    transition : all 0.3s ease;
+}
+
+.nav a{
+    color : black;
+    text-decoration: none;
+    border-radius: 2em;
+    padding: 0.5em 1em;
+    cursor: pointer;
+    border: 2pt solid #ffffff00;
+    transition : all 0.3s ease;
+}
+
+.nav a:hover{
+    border: 2pt solid #ffffff;
+    box-shadow: 0 0 2em #ffffff2b;
+}
+
+.nav .learn{
+    color : white;
+    border: 2pt solid transparent;
+    background: linear-gradient(#FF9B84, #FF9B84) padding-box,
+    linear-gradient(#FFCB8D, #EB4747) border-box;
+    border-radius: 40px;
+    padding : 10px 40px;
+    transition : all 0.3s ease;
+}
+
+.nav .learn:hover{
+    transition : all 0.3s ease;
+    border: 2pt solid transparent;
+    filter : drop-shadow(0px 0px 4px #FFCB8D) drop-shadow(0px 0px 4px #FFCB8D) drop-shadow(0px 0px 4px #FFCB8D);
+}
+
+.burger{
+    cursor : pointer;
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.7);
+    transition: opacity 500ms;
+    visibility: hidden;
+    opacity: 0;
+    z-index : 4;
+  }
+  .overlay:target {
+    visibility: visible;
+    opacity: 1;
+  }
+  
+  .popup {
+    padding: 20px;
+    background: #ffffff;
+    border-radius: 5px;
+    width: 179px;
+    height: 200px;
+    position: absolute;
+    right : 50px;
+    top : 100px;
+    z-index : 4;
+    display : flex;
+    flex-direction: column;
+    gap : 20px;
+  }
+  
+  .popup .tabs{
+    
+    display : flex;
+    justify-content: flex-start;
+    align-items: center;
+    width : 100%;
+    gap : 15px;
+  }
+
+  .popup .tabs:hover{
+    cursor : pointer;
+    text-decoration : underline;
+  }
+
+  .t{
+    margin-left : 11px;
+  }
+
+  .popup .tabs .icon3{
+    width : 45px;
+    height : 42px;
+  }
+
+  .popup .tabs .icon4{
+    width : 22px;
+    height : 22px;
+  }
+
+  .popup .tabs p{
+    font-size: 14px;
+    color: #000000;
+    margin : 0;
+  }
+
+  .popup .close {
+    position: absolute;
+    left : 75px;
+    bottom : 5px;
+    transition: all 100ms;
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #000000;
+    padding : 0 9px;
+    filter : drop-shadow(0px 4px 4px rgba(255, 255, 255, 0.25));
+    border : 3px solid #00000000;
+  }
+  .popup .close:hover {
+    color: #000000;
+    border : 3px solid #000000;
+    border-radius: 50px;
+  }
+  .popup .content {
+    max-height: 30%;
+    overflow: hidden;
+  }
+
+.dropdown {
+    padding : 0px 10px;
+    color : black;
+    position: relative;
+    flex-wrap: wrap;
+    text-align: center;
+  }
+  
+  .dropdown * {
+    box-sizing: border-box;
+  }
+  
+  .select {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 2em;
+    padding: 0.5em 1em;
+    cursor: pointer;
+    transition: 0.3s;
+    border: 2pt solid #ffffff00;
+    gap : 5px;
+  }
+  
+  .select-clicked {
+    border: 2pt solid #a9a9a9;
+  }
+  
+  .select:hover {
+    border: 2pt solid #ffffff;
+    box-shadow: 0 0 2em #ffffff2b;
+  }
+  
+  .menu {
+    list-style: none;
+    padding: 0.2em 0.5em;
+    background: #1e1e1ee1;
+    box-shadow: 0 0.5em 1em #000000;
+    border-radius: 2em;
+    color: #ffffff;
+    position: absolute;
+    top: 4em;
+    left: 50%;
+    width: 100%;
+    transform: translateX(-50%);
+    opacity: 0;
+    display: none;
+    transition: 0.2s;
+    z-index: 1;
+  }
+  
+  .menu li {
+    padding: 0.7em 0.5em;
+    margin: 0.3em 0;
+    border-radius: 2em;
+    cursor: pointer;
+    font-weight: bold;
+  }
+  
+  .menu li:hover {
+    background: rgba(255, 255, 255, 0.747);
+    color: rgb(0, 0, 0);
+  }
+  
+  .dragdown-active {
+    background: rgba(0, 255, 238, 0.747);
+    color: rgb(0, 0, 0);
+  }
+  
+  .menu-open {
+    display: block;
+    opacity: 1;
+  }
+
+.content{
+    display: flex;
+    flex-direction: row;
+}
+
+.left{
+    margin-top: 2%;
+    width: 70%;
+    height: 800px;
+    margin-left: 2%;
+    /* background-color: rebeccapurple; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    
+}
+
+.right{
+    margin-top: 2%;
+    width: 30%;
+    height: 500px;
+    /* background-color: red;   */
+    /* display: flex; */
+    /* justify-content: center;   */
+}
+
+.unit{
+    position: relative;
+    width: 908px;
+    height: 130px;
+    left: 88px;
+    /* top: 128px; */
+    background: #FF9B84;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.text{
+    padding-top: 20px;
+    padding-left: 40px;
+    width: 800px;
+    height: 100px;
+    /* background-color: seagreen; */
+    display: flex;
+    /* align-items: center; */
+    flex-direction: column;
+}
+
+.text h1{
+    font-family: 'Roboto';
+    /* font-style: italic; */
+    font-weight: 600;
+    font-size: 34px;
+    line-height: 38px;
+
+    color: #332929;
+}
+
+.text p{
+    font-family: 'Open Sans';
+    font-style: italic;
+    font-weight: 600;
+    font-size: 17px;
+    line-height: 27px;
+}
+
+.box{
+    width: 304px;
+    height: 281px;
+    margin-top: 23px;
+    margin-left: 30px;
+    border: 2px solid #C6B2B2;
+    border-radius: 20px;
+    /* display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column; */
+}
+
+.box h1{
+    margin-top: 22px;
+    margin-left: 17px;
+    font-style: italic;
+    font-family: 'Roboto';
+    font-weight: 600;
+    font-size: 25px;
+    line-height: 27px;
+    color: #332929;
+}
+
+.treasure{
+    margin-left: 97px;
+    margin-top: 14px;
+}
+
+.box p{
+    /* position: absolute; */
+    width: 70px;
+    height: 19px;
+    /* left: 1270px; */
+    top: 330px;
+    margin-left: 70%;
+
+    font-family: 'Roboto';
+    font-style: italic;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 16px;
+    text-align: right;
+
+    color: #837474;
+}
+
+.bar{
+    position: absolute;
+    top: 350px;
+    margin-left: 0.4%;
+    /* left: 1053px; */
+}

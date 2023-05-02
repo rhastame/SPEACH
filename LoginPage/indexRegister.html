@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register Page</title>
+    <link rel="stylesheet" href="styleRegister.css">
+</head>
+<body>
+
+    <div class = "navbar">
+        <div class = "logo">
+          <img src="https://drive.google.com/uc?export=view&id=1bZnmV_9UAkwmbUjGbxYvEsE0Jvo--hLu" alt="logo" class = "logo"  onclick = "linktoHome()"/>
+        </div>
+        <div class = "nav">
+          <div class="dropdown">
+            <div class="select">
+              <span class="selected">English</span> <img src = "https://drive.google.com/uc?export=view&id=1ngl5W9nE_xoo1urMLBI9TkVc9Qje4gW7">
+            </div>
+            <ul class="menu">
+              <li class="option">English</li>
+              <li class="option">Indonesia</li>
+              <li class="option">Mandarin</li>
+              <li class="option">Korea</li>
+              <li class="option">Japan</li>
+            </ul>
+          </div>
+          <a href="../FAQPage/indexFAQ.html">About Us</a>
+          <a href="../LearningPage/indexPickLanguage.html" class = "learn">Learn</a>
+          <img src = "https://drive.google.com/uc?export=view&id=1XRt20QC3Y5wI9u0kNbVbZlrbXmKHzg8X" class = "burger" alt = "burger" onclick = "popup()">
+          <div id="popup1" class="overlay">
+            <div class="popup">
+              <div class = "tabs" onclick = "linktoProfile()">
+                <img src = "https://drive.google.com/uc?export=view&id=1kx-HJ3fSHqR7Vzczqwo4IHC31I_7GLTK" class = "icon3" alt = "icon3">
+                <p> Putri Jessica H. </p>
+              </div>
+              <div class = "tabs t" onclick = "linktoEditProfile()">
+                <img src = "https://drive.google.com/uc?export=view&id=1Sue4040mv7Vf_42zYuhl2rmfqY5BDbMP" class = "icon4" alt = "icon4">
+                <p> Settings</p>
+              </div>
+              <div class = "tabs t" onclick = "linktoFAQ()">
+                <img src = "https://drive.google.com/uc?export=view&id=13Z0yrC0cP4K_WBRXhKpLQqn8wodmu3--" class = "icon4" alt = "icon4">
+                <p> Help </p>
+              </div>
+              <a class="close" href="#">&times;</a>
+            </div>
+          </div>
+        </div>
+        </div>
+
+        <!-- login and register -->
+
+        <div class="loginPage">
+          
+          <div class="wrapper">
+            <div class="form-box login">
+                <h2>Login</h2>
+                <form action="#" id="formlogin">
+                    <div class="input-box">
+                      <h5>Email</h5>
+                      <input id="emaillogin" type="email">
+                      <div class="error"></div>
+                    </div>
+
+                    <div class="input-box">
+                       <h5>Password</h5>
+                       <input id="passwordlogin" type="password">
+                       <div class="error"></div>
+                    </div>
+
+                    <!-- <div class="remember-forgot">
+                        <label><input type="checkbox">Remember me</label>
+                        <a href="#">Forgot Password?</a>
+                    </div> -->
+                    <div class="login-register">
+                      <p>Don't have an account? <a href="#" class="register-link">Register</a></p>
+                  </div>
+                    <button type="submit" class="btn">Login</button>
+                </form>
+              
+            
+                <p class="agree">By signing in to Speach, you agree to our
+                  <br><a href="#" class="terms">Terms and Privacy Policy</a>
+                </p>
+            </div>
+
+            <div class="form-box register">
+              <h2>Create Your Account</h2>
+              <form action="#" id="formreg">
+                 <div class="input-box">
+                   <h5>Username</h5>
+                   <input id="name" type="text">
+                   <div class="error"></div>
+                 </div>
+
+                  <div class="input-box">
+                      <h5>Email</h5>
+                      <input id="emailreg" type="email">
+                      <div class="error"></div>
+                  </div>
+
+                  <div class="input-box">
+                      <h5>Password</h5>
+                      <input id="passwordreg" type="password">
+                      <div class="error"></div>
+                  </div>
+
+                  <div class="login-register">
+                    <p>Already have an account? <a href="#" class="login-link">Login</a></p>
+                </div>
+                <button type="submit" class="btn">Create Account</button>
+              </form>
+              
+              
+              <p class="agree">By signing in to Speach, you agree to our
+                <br><a href="#" class="terms">Terms and Privacy Policy</a>
+              </p>
+            </div>
+
+          </div>
+
+          <div class="anotherWay">    
+            <button type="submit" class="btn">
+              <img id="btnLogo" src="https://drive.google.com/uc?export=view&id=1PsYOZk38C8xcf5sDCBsrmTZ3tq7xJ0ru" alt="">Login/Signup with Google
+            </button>
+            <button type="submit" class="btn">
+              <img id="btnLogo1" src="https://drive.google.com/uc?export=view&id=1nHqWJBljeiGUPZ4dMMTMLPdBvDU5kVWC" alt="">Login/Signup with Facebook
+            </button>
+            <button type="submit" class="btn">
+              <img id="btnLogo" src="https://drive.google.com/uc?export=view&id=1iG2zOzb2-NiuIT0cx52chdYR7_j1wJuz" alt="">Login/Signup with Twitter
+            </button>
+          </div>
+
+        </div>
+        
+    
+</body>
+<script src="scriptRegister.js"></script>
+</html>

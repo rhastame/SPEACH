@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Unit 1</title>
+  <link rel="stylesheet" href="styleUnit1.css" />
+
+</head>
+
+<body>
+  <div class="navbar">
+    <div class="logo">
+      <img src="https://drive.google.com/uc?export=view&id=1bZnmV_9UAkwmbUjGbxYvEsE0Jvo--hLu" alt="logo" class="logo1"
+        onclick="linktoHome()" />
+    </div>
+    <div class="nav">
+      <div class="dropdown">
+        <div class="select">
+          <span class="selected">English</span> <img
+            src="https://drive.google.com/uc?export=view&id=1ngl5W9nE_xoo1urMLBI9TkVc9Qje4gW7">
+        </div>
+        <ul class="menu">
+          <li class="option">English</li>
+          <li class="option">Indonesia</li>
+          <li class="option">Mandarin</li>
+          <li class="option">Korea</li>
+          <li class="option">Japan</li>
+        </ul>
+      </div>
+      <a href="../FAQPage/indexFAQ.html">About Us</a>
+      <a href="../LearningPage/indexPickLanguage.html" class="learn">Learn</a>
+      <img src="https://drive.google.com/uc?export=view&id=1XRt20QC3Y5wI9u0kNbVbZlrbXmKHzg8X" class="burger"
+        alt="burger" onclick="popup()">
+      <div id="popup1" class="overlay">
+        <div class="popup">
+          <div class="tabs" onclick="linktoProfile()">
+            <img src="https://drive.google.com/uc?export=view&id=1kx-HJ3fSHqR7Vzczqwo4IHC31I_7GLTK" class="icon3"
+              alt="icon3">
+            <p> Putri Jessica H. </p>
+          </div>
+          <div class="tabs t" onclick="linktoEditProfile()">
+            <img src="https://drive.google.com/uc?export=view&id=1Sue4040mv7Vf_42zYuhl2rmfqY5BDbMP" class="icon4"
+              alt="icon4">
+            <p> Settings</p>
+          </div>
+          <div class="tabs t" onclick="linktoFAQ()">
+            <img src="https://drive.google.com/uc?export=view&id=13Z0yrC0cP4K_WBRXhKpLQqn8wodmu3--" class="icon4"
+              alt="icon4">
+            <p> Help </p>
+          </div>
+          <a class="close" href="#">&times;</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="content">
+    <div class="left">
+      <div class="wrap">
+        <a href="../indexLearnMenu.html" class="x" onclick="indexHome2.html">
+          <img src="https://drive.google.com/uc?export=view&id=17SXKKYm7Un7fQacQ6ryOIWgfdR7mzkFk" class="ximg" alt="">
+        </a>
+        <h1>Unit 1</h1>
+        <p class="txt">Use basic phares, greet people</p>
+        <img src="https://drive.google.com/uc?export=view&id=1_J37IWGMkuOTJRtP7TkrH0-RiqEzvwgv" class="image" alt="">
+
+        <div class="isi">
+          <div class="chapter">
+            <img src="https://drive.google.com/uc?export=view&id=1wzmkCv33LkdJlebrKexsLzWA4fyoHElb" class="num" alt="">
+            <a href="../indexLesson1.html" class="startBtn1">
+              <!-- <img src="https://drive.google.com/uc?export=view&id=1za757deY6pW33F0zHO2-fFcwqiinNOVp" class="start" alt=""> -->
+            </a>
+            <div class="teks">
+              <p>Good morning, Good afternoon, Good evening</p>
+            </div>
+          </div>
+
+          <div class="chapter">
+            <img src="https://drive.google.com/uc?export=view&id=1s4Hy06ASFwrkF0o74E0xcNiUs62dPjAk" class="num" alt="">
+            <div class="startBtn2">
+              <!-- <img src="https://drive.google.com/uc?export=view&id=1bvCeBwNFMsLGdETqP58f7ovGzAaC0GIV" class="start" alt=""> -->
+            </div>
+            <div class="teks">
+              <p>Nice to meet you, have a good day, good to see you</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="right">
+      <div class="box">
+        <h1>Learning Tips</h1>
+        <div class="slider">
+          <img src="https://drive.google.com/uc?export=view&id=1GDAJyZ_c4zKt9Y-ZiuH2KO_FTNqlAtIj" class="prev"
+            alt="prev" onclick="next(-1)">
+          <img src="https://drive.google.com/uc?export=view&id=1BgNzXOu2hiNHhk37AoMEL23_a0pXOA5K" class="next"
+            alt="next" onclick="next(1)">
+          <div class="slides">
+            <!--radio buttons start-->
+            <input type="radio" name="radio-btn" id="radio1" />
+            <input type="radio" name="radio-btn" id="radio2" />
+            <input type="radio" name="radio-btn" id="radio3" />
+            <!--radio buttons end-->
+            <!--slide images start-->
+            <div class="slide first">
+              <p class="subtitle">Listen to English every day!</p>
+            </div>
+            <div class="slide">
+              <p class="subtitle">Read English stories!</p>
+            </div>
+            <div class="slide">
+              <p class="subtitle">Talk with real live humans.</p>
+            </div>
+            <!--slide images end-->
+            <!--automatic navigation start-->
+            <div class="navigation-auto">
+              <div class="auto-btn1"></div>
+              <div class="auto-btn2"></div>
+              <div class="auto-btn3"></div>
+            </div>
+            <!--automatic navigation end-->
+          </div>
+          <!--manual navigation start-->
+          <div class="navigation-manual">
+            <label for="radio1" class="manual-btn"></label>
+            <label for="radio2" class="manual-btn"></label>
+            <label for="radio3" class="manual-btn"></label>
+          </div>
+          <!--manual navigation end-->
+        </div>
+        <!--image slider end-->
+      </div>
+    </div>
+  </div>
+  <script src="scriptUnit1.js"></script>
+</body>
+
+</html>

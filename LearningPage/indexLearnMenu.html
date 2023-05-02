@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learn Menu</title>
+    <link rel="stylesheet" href="styleLearnMenu.css" />
+</head>
+<body>
+    <div class = "container">
+        <div class = "navbar">
+            <div class = "logo">
+              <img src="https://drive.google.com/uc?export=view&id=1bZnmV_9UAkwmbUjGbxYvEsE0Jvo--hLu" alt="logo" class = "logo1"  onclick = "linktoHome()"/>
+            </div>
+            <div class = "nav">
+              <div class="dropdown">
+                <div class="select">
+                  <span class="selected">English</span> <img src = "https://drive.google.com/uc?export=view&id=1ngl5W9nE_xoo1urMLBI9TkVc9Qje4gW7">
+                </div>
+                <ul class="menu">
+                  <li class="option">English</li>
+                  <li class="option">Indonesia</li>
+                  <li class="option">Mandarin</li>
+                  <li class="option">Korea</li>
+                  <li class="option">Japan</li>
+                </ul>
+              </div>
+              <a href="../FAQPage/indexFAQ.html">About Us</a>
+              <a href="../LearningPage/indexPickLanguage.html" class = "learn">Learn</a>
+              <img src = "https://drive.google.com/uc?export=view&id=1XRt20QC3Y5wI9u0kNbVbZlrbXmKHzg8X" class = "burger" alt = "burger" onclick = "popup()">
+              <div id="popup1" class="overlay">
+                <div class="popup">
+                  <div class = "tabs" onclick = "linktoProfile()">
+                    <img src = "https://drive.google.com/uc?export=view&id=1kx-HJ3fSHqR7Vzczqwo4IHC31I_7GLTK" class = "icon3" alt = "icon3">
+                    <p> Putri Jessica H. </p>
+                  </div>
+                  <div class = "tabs t" onclick = "linktoEditProfile()">
+                    <img src = "https://drive.google.com/uc?export=view&id=1Sue4040mv7Vf_42zYuhl2rmfqY5BDbMP" class = "icon4" alt = "icon4">
+                    <p> Settings</p>
+                  </div>
+                  <div class = "tabs t" onclick = "linktoFAQ()">
+                    <img src = "https://drive.google.com/uc?export=view&id=13Z0yrC0cP4K_WBRXhKpLQqn8wodmu3--" class = "icon4" alt = "icon4">
+                    <p> Help </p>
+                  </div>
+                  <a class="close" href="#">&times;</a>
+                </div>
+              </div>
+            </div>
+    </div>
+
+    <div class="content">
+        <div class="left">
+            <div class="unit">
+                <div class="text">
+                    <h1>Unit 1</h1>
+                    <p>Use basic phares, greet people</p>
+                </div>
+                <a href="../LearningPage/indexUnit1.html" class="play">
+                    <img src="https://drive.google.com/uc?export=view&id=1byF1pWluSzsGbqLeA4ly9M3XmpPtwesW" class="playImg" alt="">
+                </a>
+            </div>
+
+            <div class="unit">
+                <div class="text">
+                    <h1>Unit 2</h1>
+                    <p>Introduce yourself</p>
+                </div>
+                <div class="play">
+                    <img src="https://drive.google.com/uc?export=view&id=1WjyJmNT54qmYYBU3rARpX5OXQ-5jUA0T" class="playImg" alt="">
+                </div>                
+            </div>
+            <div class="unit">
+                <div class="text">
+                    <h1>Unit 3</h1>
+                    <p>Refer to family members</p>
+                </div>
+                <div class="play">
+                    <img src="https://drive.google.com/uc?export=view&id=1WjyJmNT54qmYYBU3rARpX5OXQ-5jUA0T" class="playImg" alt="">
+                </div>                
+            </div>
+            <div class="unit">
+                <div class="text">
+                    <h1>Unit 4</h1>
+                    <p>Use the present tense</p>
+                </div>
+                <div class="play">
+                    <img src="https://drive.google.com/uc?export=view&id=1WjyJmNT54qmYYBU3rARpX5OXQ-5jUA0T" class="playImg" alt="">
+                </div>                
+            </div>
+            <div class="unit">
+                <div class="text">
+                    <h1>Unit 5</h1>
+                    <p>Talk about things you do</p>
+                </div>
+                <div class="play">
+                    <img src="https://drive.google.com/uc?export=view&id=1WjyJmNT54qmYYBU3rARpX5OXQ-5jUA0T" class="playImg" alt="">
+                </div>                
+            </div>
+
+        </div>
+
+        <div class="right">
+            <div class="box">
+                <h1><strong>XP Progress</strong></h1>
+                <img src="https://drive.google.com/uc?export=view&id=1fLkpF9DQpc2tyi_ga2LeQ5y_I9ZyLgy5" class="treasure" alt="">
+                <h1><strong>Daily Goal</strong></h1>
+                <p>0/100 XP</p>
+                <img src="https://drive.google.com/uc?export=view&id=1vsxmizec08UhfzlasjgrgWxMcohdWUic" class="bar" alt="">
+            </div>
+        </div>
+    </div>
+    <script src = "scriptLearnMenu.js"></script>
+</body>
+</html>

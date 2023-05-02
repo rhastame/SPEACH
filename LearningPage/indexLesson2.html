@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unit 1 - Lesson 2</title>
+    <link rel="stylesheet" href="styleLesson2.css" />
+</head>
+<body>
+
+    <div class="question" id="first">
+        <div class="upper">
+            <a href="../indexUnit1.html" class="x" onclick="indexHome2.html">
+                <img src="https://drive.google.com/uc?export=view&id=17SXKKYm7Un7fQacQ6ryOIWgfdR7mzkFk" class="ximg" alt="">
+            </a>
+            <img src="https://drive.google.com/uc?export=view&id=1wTKNFn_7j_8MHYyzpi2WU2Wcaa1l00Q3" class="bar" alt="">
+        </div>
+        
+        <div class="wrapper">
+            <h1>
+                A : Hi, what is your name?<br>
+                B: Hello! my name is Jessica. ________!<br>
+                A : Nice to meet you too!
+            </h1>
+            <div class="options">
+                <a href="#wrong" class="option1">
+                    <p>How are you</p>
+                </a>
+                <a href="#wrong" class="option1">
+                    <p>See you</p>
+                </a>
+                <a href="#correct" class="option1" onclick="changeColor2(event)">
+                    <p>Nice to meet you</p>
+                </a>
+                <a href="#wrong" class="option1">
+                    <p>I am fine</p>
+                </a>
+            </div>
+        </div>
+        
+        <div class="lower">
+            <div class="bwh" id="correct">
+                <img src="https://drive.google.com/uc?export=view&id=1ulwo40fNMDD_0LJZTODkhNuFIAllXQ8r" class="correctImg" alt="">
+                <h1>Bagus! Jawaban anda benar!</h1>
+                <button class="next" onclick="openQ(event, 'second')"></button>
+            </div>
+
+            <div class="bwh" id="wrong">
+                <img src="https://drive.google.com/uc?export=view&id=19wjUVVV4UOMEPnGjklMivQrQg-JFt4xW" class="correctImg" alt="">
+                <h1>Jawaban anda kurang tepat! </h1>
+                <button class="next" onclick="openQ(event, 'second')"></button>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="question" id="second">
+        <div class="upper">
+            <a href="../indexUnit1.html" class="x" onclick="indexHome2.html">
+                <img src="https://drive.google.com/uc?export=view&id=17SXKKYm7Un7fQacQ6ryOIWgfdR7mzkFk" class="ximg" alt="">
+            </a>
+            <img src="https://drive.google.com/uc?export=view&id=1xatpVL-gXwbjrjlHdFDyK_MxwGKC76OW" class="bar" alt="">
+        </div>
+        
+        <div class="wrapper">
+            <h1>Kita mengucapkan “good night” saat...</h1>
+            <div class="options2">
+                <a href="#wrong" class="option2">
+                    <img src="https://drive.google.com/uc?export=view&id=1E8O8XUoj6xBBBgz56VoTyNdSkiJHwQLy" class="imgg" alt="">
+                </a>
+                <a href="#wrong2" class="option2">
+                    <img src="https://drive.google.com/uc?export=view&id=1lnO2ZjhwvkSBu5WU6NrsH4QRHNHDSsUv" class="imgg" alt="">
+                </a>
+                <a href="#correct2" class="option2" onclick="changeColor3(event)">
+                    <img src="https://drive.google.com/uc?export=view&id=16X90qFSMhtxFnhIo9r8mR9EXCKKWK8z0" class="imgg" alt="">
+                </a>
+                <a href="#wrong2" class="option2">
+                    <img src="https://drive.google.com/uc?export=view&id=1r2jSNQrnokCUSha3zGD2spc7w_ZnEkT3" class="imgg" alt="">
+                </a>
+            </div>
+        </div>
+        
+        <div class="lower2">
+            <div class="bwh2" id="correct2">
+                <img src="https://drive.google.com/uc?export=view&id=1ulwo40fNMDD_0LJZTODkhNuFIAllXQ8r" class="correctImg2" alt="">
+                <h1>Bagus! Jawaban anda benar!</h1>
+                <button class="next2" onclick="openQ(event, 'third')"></button>
+            </div>
+
+            <div class="bwh2" id="wrong2">
+                <img src="https://drive.google.com/uc?export=view&id=19wjUVVV4UOMEPnGjklMivQrQg-JFt4xW" class="correctImg2" alt="">
+                <h1>Jawaban anda kurang tepat! </h1>
+                <button class="next2" onclick="openQ(event, 'third')"></button>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="question" id="third">
+         <div class="upper">
+            <a href="../indexUnit1.html" class="x" onclick="indexHome2.html">
+                <img src="https://drive.google.com/uc?export=view&id=17SXKKYm7Un7fQacQ6ryOIWgfdR7mzkFk" class="ximg" alt="">
+            </a>
+            <img src="https://drive.google.com/uc?export=view&id=1iIE4A_gdrRMdZtwFzh_Xem9-tDE_Q5nP" class="bar" alt="">
+        </div>
+        
+        <div class="wrapper">
+            <h1>Selain “nice to meet you”, kita bisa mengatakan...</h1>
+            <div class="options">
+                <a href="#correct3" class="option1" onclick="changeColor(event)">
+                    <p>Good to see you</p>
+                </a>
+                <a href="#wtong3" class="option1">
+                    <p>Have a good day</p>
+                </a>
+                <a href="#wrong3" class="option1">
+                    <p>See you again</p>
+                </a>
+                <a href="#wrong3" class="option1">
+                    <p>Good bye</p>
+                </a>
+            </div>
+        </div>
+        
+        <div class="lower3">
+            <div class="bwh3" id="correct3">
+                <img src="https://drive.google.com/uc?export=view&id=1ulwo40fNMDD_0LJZTODkhNuFIAllXQ8r" class="correctImg" alt="">
+                <h1>Bagus! Jawaban anda benar!</h1>
+                <button class="next" onclick="openQ(event, 'fourth')"></button>
+            </div>
+
+            <div class="bwh3" id="wrong3">
+                <img src="https://drive.google.com/uc?export=view&id=19wjUVVV4UOMEPnGjklMivQrQg-JFt4xW" class="correctImg" alt="">
+                <h1>Jawaban anda kurang tepat! </h1>
+                <button class="next" onclick="openQ(event, 'fourth')"></button>
+            </div>
+        </div>
+    </div>
+
+    <div class="question" id="fourth">
+        <div class="container">
+            <img src="https://drive.google.com/uc?export=view&id=1fLkpF9DQpc2tyi_ga2LeQ5y_I9ZyLgy5" class="treasure" alt="">
+            <img src="https://drive.google.com/uc?export=view&id=1nNdDXetS-tes6zeiabcVGg-moCNPNUnG" class="barr" alt="">
+            <h1>+ 27XP</h1>
+            <h1>Selamat !<br>
+                Anda telah menyelesaikan sesi ini, silahkan tekan tombol berikutnya <br>
+                dan kembali menjelajah kemampuan bahasa anda !
+            </h1>
+            <a class="nextt" href="../indexUnit1.2DONE.html"></a>
+        </div>
+    </div>
+
+
+</body>
+<script src="scriptLesson2.js"></script>
+</html>
