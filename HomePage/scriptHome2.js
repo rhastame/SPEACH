@@ -78,7 +78,7 @@ function linktoEditProfile() {
 }
 
 function linktoLogIn() {
-    window.location.replace("../LogInPage/indexLogIn.html");
+    window.location.replace("../LogInPage/indexRegister.html");
 }
 
 const dropdowns = document.querySelectorAll(".dropdown");
