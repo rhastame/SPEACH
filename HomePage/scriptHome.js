@@ -57,6 +57,9 @@ isihover2.addEventListener("mouseout", () => {
   icon2.style.transform = "translateX(0px)";
 });
 
+function linktoLearn(){
+  window.location.replace("../LearningPage/indexPickLanguage.html");
+}
 function linktoHome() {
   window.location.replace("../HomePage/indexHome2.html");
 }

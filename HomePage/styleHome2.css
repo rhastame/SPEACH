@@ -98,6 +98,13 @@ a {
     height: 45px;
     border-radius: 10px;
     text-align: center;
+    cursor : pointer;
+    transition: all 0.3s ease;
+}
+
+.jumbotron .button:hover{
+    color: #FFC3B5;
+    background: #4C241D;
 }
 
 
